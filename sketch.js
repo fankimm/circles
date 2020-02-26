@@ -1,33 +1,19 @@
-var r = 30
-
-function setup() {
-  smooth()
-  // put setup code here
-  console.log("start")
-  let density = displayDensity();
-  pixelDensity(density);
-  createCanvas (windowWidth, windowHeight)
-  background(255)
-  noStroke()
-
-  mkCircle()
+function setup(){
+createCanvas(displayWidth,displayHeight)
+background(0,0,0)
 }
 
-function mkCircle(){
-  for (var i = 0; i<100; i++){
-    for (var j = 0; j<100; j++){
-      fill(random(0,255),random(0,255),random(0,255))
-      circle(i*r, j*r, r)
-    }
-  }
-}
-function touchMoved(){
-  circle(mouseX, mouseY, r*2)
-  return false
+function draw(){
+
+if (displayWidth<displayHeight){
+backgroud(255,0,0)
+} else {
+background(0,255,0)
 }
 
-function touchStarted(){
-  console.log("touched")
-  console.log(touches[0], touches[1])
-  mkCircle()
+text(“W : “, 10,10)
+text(“H : “, 10,20)
+text(displayWidth,20,10)
+text(displayHeight,20,20)
+
 }
