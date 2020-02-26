@@ -3,18 +3,19 @@ function setup() {
   // put setup code here
   let density = displayDensity();
   pixelDensity(density);
-  createCanvas (displayWidth, displayHeight)
+ 
   noStroke()
 
 }
 
 function draw(){
-  if(displayWidth<displayHeight){
+  if(windowWidth<windowHeight){
     background(255,0,0)
   } else {
     background(0,255,0)
   }
 
+  createCanvas(windowWidth, windowHeight)
   fill(0)
   text("W : " , 10,10)
   text("H : " , 10,20)
