@@ -23,3 +23,7 @@ function mkCircle(){
 function mouseClicked(){
   mkCircle()
 }
+
+function touched(){
+  mkCircle()
+}
