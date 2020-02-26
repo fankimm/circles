@@ -1,6 +1,7 @@
 var r = 30
 
 function setup() {
+  smooth()
   // put setup code here
   console.log("start")
   let density = displayDensity();
