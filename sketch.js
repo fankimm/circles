@@ -27,5 +27,6 @@ function touchMoved(){
 
 function touchStarted(){
   console.log("touched")
+  console.log(touches[0], touches[1])
   mkCircle()
 }
