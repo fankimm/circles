@@ -6,13 +6,15 @@ function setup() {
  
   noStroke()
 
+createCanvas(windowWidth, windowHeight)
+
 }
 
 function draw(){
 
-  createCanvas(windowWidth, windowHeight) 
-
+  
   if(windowWidth<windowHeight){
+
     background(255,0,0)
   } else {
     background(0,255,0)
