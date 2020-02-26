@@ -17,6 +17,7 @@ function draw(){
 
     background(255,0,0)
   } else {
+resizeCanvas(windowWidth,windowHeight)
     background(0,255,0)
   }
 
