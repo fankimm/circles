@@ -24,8 +24,12 @@ resizeCanvas(windowWidth,windowHeight)
   fill(0)
   text("W : " , 10,10)
   text("H : " , 10,20)
+text("X : " , 10,30)
+text("Y : ", 10,40)
   text(windowWidth, 30, 10)
   text(windowHeight, 30, 20)
+text(touches[0], 30,30)
+text(touches[1], 30,40)
 
 }
 function windowResized(){
