@@ -2,6 +2,7 @@ var r = 30
 
 function setup() {
   // put setup code here
+  console.log("start")
   let density = displayDensity();
   pixelDensity(density);
   createCanvas (windowWidth, windowHeight)
