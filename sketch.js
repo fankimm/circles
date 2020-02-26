@@ -23,6 +23,7 @@ function mkCircle(){
 }
 function touchMoved(){
   circle(mouseX, mouseY, r*2)
+  return false
 }
 
 function touchStarted(){
