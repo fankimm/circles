@@ -21,10 +21,6 @@ function mkCircle(){
   }
 }
 
-function mouseClicked(){
-  console.log("clicked")
-  mkCircle()
-}
 
 function touchStarted(){
   console.log("touched")
