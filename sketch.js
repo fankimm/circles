@@ -21,7 +21,9 @@ function mkCircle(){
     }
   }
 }
-
+function touchMoved(){
+  circle(mouseX, mouseY, r*2)
+}
 
 function touchStarted(){
   console.log("touched")
