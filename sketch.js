@@ -27,7 +27,9 @@ function draw(){
   text(windowHeight, 30, 20)
 
 }
-
+function windowResized(){
+resizeCanvas(windowWidth,windowHeight)
+}
 
 function touchMoved(){
 
