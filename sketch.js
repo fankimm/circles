@@ -28,6 +28,8 @@ text("X : " , 10,30)
 text("Y : ", 10,40)
   text(windowWidth, 30, 10)
   text(windowHeight, 30, 20)
+fill(255)
+rect(0,0,40,40)
 
 }
 function windowResized(){
