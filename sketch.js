@@ -33,11 +33,22 @@ text("Y : ", 10,40)
 function windowResized(){
 resizeCanvas(windowWidth,windowHeight)
 }
+function touchStarted(){
 
+text(touches[0].x, 30,30)
+text(touches[0].y, 30,40)
+
+}
 function touchMoved(){
 
 text(touches[0].x, 30,30)
 text(touches[0].y, 30,40)
 
   return false
+}
+function touchEnded(){
+
+text(touches[0].x, 30,30)
+text(touches[0].y, 30,40)
+
 }
