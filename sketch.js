@@ -61,5 +61,5 @@ text(touches[0].y, 30,40)
 
 function drawCircle(){
   fill(random(0,255),random(0,255),random(0,255))
-  circle(touches[0].x,touches[0].y,random(0,50))
+  circle(touches[0].x,touches[0].y,30)
 }
