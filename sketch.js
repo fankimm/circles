@@ -46,7 +46,9 @@ drawCircle()
 }
 
 function myConsole(){
-background(255)
+// background(255)
+  fill(255)
+  rect(0,0,50,50)
 fill(0)
 text("W : " , 10,10)
 text("H : " , 10,20)
