@@ -4,7 +4,7 @@ function setup() {
 // put setup code here
   if(displayWidth>displayHeight){
     isMobile = false
-  }
+  } else isMobile = true
 
 let density = displayDensity();
 pixelDensity(density);
