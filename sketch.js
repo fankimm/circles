@@ -29,16 +29,18 @@ function windowResized(){
 resizeCanvas(windowWidth,windowHeight)
 }
 function touchStarted(){
+
 myConsole()
+drawCircle()
 }
 function touchMoved(){
 myConsole()
-
+drawCircle()
 return false
 }
 function touchEnded(){
 myConsole()
-
+drawCircle()
 
 
 }
@@ -55,4 +57,9 @@ text(windowHeight, 30, 20)
 text(touches[0].x, 30,30)
 text(touches[0].y, 30,40)
 
+}
+
+function drawCircle(){
+  fill(random(0,255),random(0,255),random(0,255))
+  circle(touches[0].x,touches[0].y,random(0,50))
 }
